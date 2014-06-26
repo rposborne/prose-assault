@@ -1,0 +1,84 @@
+# prose.io settings
+# https://github.com/prose/prose/wiki/Prose-Configuration
+prose:
+  rooturl: '' # Content Markdown Begins Here in repo.
+  #siteurl: 'http://www.burningpony.com' # This is Jekyll Specfic
+  media: 'assets/img/uploads'
+  ignore:
+    - /tests
+    - /util
+    - /views
+    - /upstart
+    - _prose.yml
+    - .gitignore
+    - app.coffee
+    - cms.json
+    - fabfile.py
+    - package.json
+    - "*.jade"
+    - "_*.md"
+    - "*.styl"
+
+  metadata:
+    features:
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
+          value: ""
+          type: "text"
+      - name: "image"
+        field:
+          element: "text"
+          label: "Image"
+          value: ""
+          placeholder: "design_chat_small"
+          type: "text"
+      - name: "order"
+        field:
+          element: "number"
+          label: "Order"
+          value: ""
+          type: "number"
+    customers:
+      - name: "layout"
+        field:
+          element: "select"
+          value: "post"
+          options:
+            - name: 'Single'
+              value: '_single.jade'
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
+          value: ""
+          type: "text"
+      - name: "date"
+        field:
+          element: "text"
+          label: "date"
+          value: ""
+          placeholder: "4/1/2014"
+          type: "text"
+      - name: "author_slug"
+        field:
+          element: "text"
+          label: "Author Slug"
+          value: ""
+          placeholder: "trunk_b"
+          type: "text"
+      - name: "author_bio"
+        field:
+          element: "text"
+          label: "Author Bio"
+          value: ""
+          placeholder: "Trunk is awesome"
+          type: "text"
+      - name: "author"
+        field:
+          element: "text"
+          label: "Author"
+          value: ""
+          placeholder: "Trunk Botterson"
+          type: "text"
